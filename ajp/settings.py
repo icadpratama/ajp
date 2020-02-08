@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'ajp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'website',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
+        'NAME': 'd8isbs17viisdp',
+        'USER': 'yphstnxmvqzorl',
+        'PASSWORD': 'd1ed8fb9b50a83001dd82f75e1238627e858d4b7d3c39a22bc32520370cc3c20',
+        'HOST': 'ec2-54-197-34-207.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
