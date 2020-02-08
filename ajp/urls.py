@@ -20,7 +20,10 @@ from django.urls import include, path
 from django.conf.urls import url
 from news import views as news_view
 
+from . import views
+
 urlpatterns = [
+    path('', views.home_page),
     path('admin/', admin.site.urls),
     path('news/', include('news.urls')),
 ]
