@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'ajp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blog',
+        'NAME': 'website',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': '127.0.0.1',
@@ -130,3 +130,6 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
+
+MEDIA_URL = '/images/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "images")

@@ -260,5 +260,5 @@ $RECYCLE.BIN/
 *.lnk
 
 .vscode/
-
+images/
 # End of https://www.gitignore.io/api/linux,macos,django,python,windows,virtualenv,visualstudiocode
