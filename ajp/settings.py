@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,12 +21,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7nox8ye*@i6+9&psha!3*9z=+0i6srp$k6pk(rixf7n&bi_s80'
+SECRET_KEY = '7d38af2e65d1ee4e6e940be1ff7a2fcfa422f1aba281a374'
+# 7d38af2e65d1ee4e6e940be1ff7a2fcfa422f1aba281a374
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['adrianjparuntu.herokuapp.com/']
+ALLOWED_HOSTS = ['adrianjparuntu.herokuapp.com']
 
 
 # Application definition
@@ -133,3 +135,5 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "images")
+
+django_heroku.settings(locals())
