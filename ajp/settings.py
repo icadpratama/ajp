@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
     # '/var/www/static/',
 ]
 
-MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "images")
+MEDIA_URL = '/images/'
 
 django_heroku.settings(locals())
