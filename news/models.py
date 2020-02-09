@@ -35,6 +35,8 @@ class NewsManager(models.Manager):
 class News(models.Model):
     user    = models.ForeignKey(User, default=1, null=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=60)
+    subtitle = models.CharField(max_length=120)
+    headline = models.CharField(max_length=255)
     content = models.TextField()
     slug   = models.SlugField(max_length=60,unique=True)
     publish_date = models.DateTimeField(auto_now=False, auto_now_add=False, null=True, blank=True, default=datetime.now)
@@ -49,6 +51,6 @@ class News(models.Model):
 
     def __unicode__(self):
         return self.title
-    
+
     def __str__(self):
         return self.title
