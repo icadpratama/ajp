@@ -38,9 +38,9 @@ class News(models.Model):
     subtitle = models.CharField(max_length=120)
     headline = models.CharField(max_length=255)
     content = models.TextField()
-    slug   = models.SlugField(max_length=60,unique=True)
-    publish_date = models.DateTimeField(auto_now=False, auto_now_add=False, null=True, blank=True, default=datetime.now)
+    slug = models.SlugField(max_length=60, unique=True)
     thumbnail = models.FileField(null=True, blank=True, upload_to='news/thumbnail/')
+    publish_date = models.DateTimeField(auto_now=False, auto_now_add=False, null=True, blank=True, default=datetime.now)
     updated = models.DateTimeField(auto_now=True, auto_now_add=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
 
