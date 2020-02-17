@@ -7,7 +7,7 @@ from datetime import datetime
 User = settings.AUTH_USER_MODEL
 import re
 
-class NewsQuerySet(models.QuerySet):
+class EventQuerySet(models.QuerySet):
     def published(self):
         now = timezone.now()
         return self.filter(publish_date__lte=now)
@@ -20,9 +20,9 @@ class NewsQuerySet(models.QuerySet):
 
         return self.filter(lookup)
 
-class NewsManager(models.Manager):
+class EventManager(models.Manager):
     def get_queryset(self):
-        return NewsQuerySet(self.model, using=self._db)
+        return EventQuerySet(self.model, using=self._db)
 
     def published(self):
         return self.get_queryset().published()
@@ -33,19 +33,19 @@ class NewsManager(models.Manager):
         return self.get_queryset().published().search(query)
 
 # Create your models here.
-class News(models.Model):
+class Event(models.Model):
     user    = models.ForeignKey(User, default=1, null=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=60)
     subtitle = models.CharField(max_length=120)
     headline = models.CharField(max_length=255)
     content = models.TextField()
     slug = models.SlugField(max_length=60, unique=True, blank=True)
-    thumbnail = models.FileField(null=True, blank=False, upload_to='news/thumbnail/')
+    thumbnail = models.FileField(null=True, blank=False, upload_to='Event/thumbnail/')
     publish_date = models.DateTimeField(auto_now=False, auto_now_add=False, null=True, blank=True, default=datetime.now)
     updated = models.DateTimeField(auto_now=True, auto_now_add=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
 
-    objects = NewsManager()
+    objects = EventManager()
 
     class Meta:
         ordering = ['-publish_date', '-updated', '-timestamp']
@@ -59,4 +59,4 @@ class News(models.Model):
     def save(self):
         if not self.slug:
             self.slug = re.sub('[^A-Za-z0-9]+','-',self.title).lower()
-        super(News, self).save()
+        super(Event, self).save()
