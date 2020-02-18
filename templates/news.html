@@ -46,20 +46,33 @@
 		{% endfor %}
 	</div>
 </div>
+
 <div class="container">
+	{% if object_list.has_other_pages %}
     <div class="col lg-12">
         <div class="c-paging">
+			{% if object_list.has_previous %}
+			<div class="c-paging__number is-arrow"><a href="?page=1"></a></div>
+			{% else %}
 			<div class="c-paging__number is-arrow"></div>
-			<div class="c-paging__number is-active">1</div>
-			<a href="#" class="c-paging__number">2</a>
-			<a href="#" class="c-paging__number">3</a>
-			<a href="#" class="c-paging__number">4</a>
-			<a href="#" class="c-paging__number">5</a>
-			<div class="c-paging__number">...</div>
-			<a href="#" class="c-paging__number">10</a>
-			<a href="#" class="c-paging__number is-arrow"></a>
+			{% endif %}
+
+			{% for i in object_list.paginator.page_range %}
+			{% if object_list.number == i %}
+			<div class="c-paging__number is-active">{{ i }}</div>
+			{% else %}
+			<a href="?page={{ i }}" class="c-paging__number">{{ i }}</a>
+			{% endif %}
+			{% endfor %}
+
+			{% if object_list.has_next %}
+			<a href="?page={{ object_list.paginator.num_pages }}" class="c-paging__number is-arrow"></a>
+			{% else %}
+			<div class="c-paging__number is-arrow"></div>
+			{% endif %}
 		</div>
-    </div>
+	</div>
+	{% endif %}
 </div>
 </div>
 {% endblock content %}

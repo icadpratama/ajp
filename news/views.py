@@ -1,17 +1,20 @@
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, Http404
 from django.shortcuts import render, get_object_or_404, redirect
+from django.core.paginator import Paginator
 
 from .models import News
 
 # Create your views here.
 def list(request):
-    qs = News.objects.all().published() # queryset -> list of python object
-    if request.user.is_authenticated:
-        my_qs = News.objects.filter(user=request.user)
-        qs = (qs | my_qs).distinct()
+    qs_list = News.objects.all().published()
+    paginator = Paginator(qs_list, 2)
+    page_number = request.GET.get('page')
+    qs = paginator.get_page(page_number)
     template_name = 'news.html'
-    context = {'object_list': qs}
+    context = {
+        'object_list': qs
+    }
     return render(request, template_name, context)
 
 def detail(request, slug):
