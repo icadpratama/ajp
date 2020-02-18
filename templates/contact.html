@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %} Kontak {% endblock title %}
+
+{% block content %}
+<div class="section is-header no-padding-bottom overflow-hidden bg-contact">
+    <div class="c-contact1">
+        <div class="c-contact1__icon"><a href="#" class="fa-regular"></a></div>
+        <div class="c-contact1__wrapper">
+            <div class="c-contact1_inner">
+                <h1>Halo, let&#x27;s talk!</h1>
+                <div class="margin-bottom-double low-text-contrast">Or come and drink coffee in comfy place and hangout
+                    with us</div>
+                <div class="container container-nested">
+                    <div class="col lg-12">
+                        <div><span class="text-medium weight-is-medium">Alamat Kantor?</span>
+                            <br>‍<br>JL. Gatot Subroto No.1, RT.1/RW.3
+                            <br>Senayan, DKI Jakarta
+                            <br>10270
+                            <br>‍<br>kontak@adrianjp.com
+                            <br><a href="tel:+62215715818">+62 (21)-571-5818</a><br>
+                        </div>
+                    </div>
+                    <div class="col lg-6">
+                        <div>
+                            <span class="text-medium weight-is-medium">Jam Kerja</span>
+                            <br><br>Senin - Jumat
+                            <br>8 pagi — 5 sore<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-contact1__form w-form">
+                    <div class="margin-bottom">Atau kirim pesan ke tim:</div>
+                    <form id="email-form" name="email-form" data-name="Email Form">
+                        <input type="text" class="form-input-text w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Nama" id="name-2">
+                        <input type="email" class="form-input-text w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email" id="email-2" required="">
+                        <input type="tel" class="form-input-text w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="No. HP" id="Phone-2" required="">
+                        <textarea placeholder="Pesan" maxlength="5000" id="Message-2" name="Message-2" data-name="Message 2" required="" class="form-input-text textarea w-input"></textarea>
+                        <input type="submit" value="Kirim" data-wait="Please wait..." class="button-primary margin-top w-button">
+                    </form>
+                    <div class="w-form-done">
+                        <div>Terima kasih! Pesan Anda telah terkirim dan diterima oleh Tim!</div>
+                    </div>
+                    <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

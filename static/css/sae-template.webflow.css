@@ -517,7 +517,7 @@ figcaption {
 }
 
 .section.bg-dummy-image {
-  background-image: url('../images/stripe_f1ea6e05e47e42e1023034f713c5bf9b_1stripe_f1ea6e05e47e42e1023034f713c5bf9b.png');
+  background-image: url('/static/images/stripe_f1ea6e05e47e42e1023034f713c5bf9b_1stripe_f1ea6e05e47e42e1023034f713c5bf9b.png');
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -531,7 +531,7 @@ figcaption {
 }
 
 .section.bg-shade {
-  background-image: url('../images/stripe_f1ea6e05e47e42e1023034f713c5bf9b_1stripe_f1ea6e05e47e42e1023034f713c5bf9b.png');
+  background-image: url('/static/images/stripe_f1ea6e05e47e42e1023034f713c5bf9b_1stripe_f1ea6e05e47e42e1023034f713c5bf9b.png');
   background-position: 50% 50%;
   background-size: auto;
 }
@@ -541,21 +541,21 @@ figcaption {
 }
 
 .section.is-header.bg-accent.position-relative.bg-img {
-  background-image: url('../images/startupoffice.jpg');
+  background-image: url('/static/images/startupoffice.jpg');
   background-position: 100% 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .section.is-header.bg-accent.position-relative.bg-img2 {
-  background-image: url('../images/photo-1562184724-0b0833e5ba27.jpg');
+  background-image: url('/static/images/photo-1562184724-0b0833e5ba27.jpg');
   background-position: 100% 0%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .section.is-header.bg-accent.position-relative.bg-img3 {
-  background-image: url('../images/create.jpg');
+  background-image: url('/static/images/create.jpg');
   background-position: 100% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -566,7 +566,7 @@ figcaption {
 }
 
 .section.is-header.no-padding-bottom.overflow-hidden.bg-contact {
-  background-image: url('../images/contact-us.jpg');
+  background-image: url('/static/images/contact-us.jpg');
   background-position: 0% 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1395,7 +1395,7 @@ figcaption {
 
 .text-small.is-bold.trial-bg {
   padding-left: 24px;
-  background-image: url('../images/Ellipse.svg');
+  background-image: url('/static/images/Ellipse.svg');
   background-position: 0% 2px;
   background-size: 16px;
   background-repeat: no-repeat;
@@ -2009,7 +2009,7 @@ figcaption {
 }
 
 .dummy-image1 {
-  background-image: url('../images/creative.svg');
+  background-image: url('/static/images/creative.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2220,63 +2220,63 @@ figcaption {
 }
 
 .c-carousel2__content.dummy1 {
-  background-image: url('../images/300x400_1.svg');
+  background-image: url('/static/images/300x400_1.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy2 {
-  background-image: url('../images/300x400-1.svg');
+  background-image: url('/static/images/300x400-1.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy3 {
-  background-image: url('../images/300x400-2.svg');
+  background-image: url('/static/images/300x400-2.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy4 {
-  background-image: url('../images/300x400-3.svg');
+  background-image: url('/static/images/300x400-3.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy5 {
-  background-image: url('../images/300x400-4.svg');
+  background-image: url('/static/images/300x400-4.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy6 {
-  background-image: url('../images/300x400-5.svg');
+  background-image: url('/static/images/300x400-5.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy7 {
-  background-image: url('../images/300x400-6.svg');
+  background-image: url('/static/images/300x400-6.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy8 {
-  background-image: url('../images/300x400-8_1.svg');
+  background-image: url('/static/images/300x400-8_1.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-carousel2__content.dummy9 {
-  background-image: url('../images/300x400-9.svg');
+  background-image: url('/static/images/300x400-9.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2446,7 +2446,7 @@ figcaption {
   z-index: -1;
   width: 50vw;
   height: 670px;
-  background-image: url('../images/stripe_f1ea6e05e47e42e1023034f713c5bf9b_1stripe_f1ea6e05e47e42e1023034f713c5bf9b.png');
+  background-image: url('/static/images/stripe_f1ea6e05e47e42e1023034f713c5bf9b_1stripe_f1ea6e05e47e42e1023034f713c5bf9b.png');
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -2653,7 +2653,7 @@ figcaption {
   padding-right: 40px;
   padding-left: 40px;
   border-left-style: none;
-  background-image: url('../images/close-quote.svg'), url('../images/open-quote.svg');
+  background-image: url('/static/images/close-quote.svg'), url('/static/images/open-quote.svg');
   background-position: 100% 100%, 0% 0%;
   background-size: 32px, 32px;
   background-repeat: no-repeat, no-repeat;
@@ -2683,7 +2683,7 @@ figcaption {
 
 .c-checklist_item {
   padding-left: 32px;
-  background-image: url('../images/list-1.svg');
+  background-image: url('/static/images/list-1.svg');
   background-position: 0% 2px;
   background-size: 17px;
   background-repeat: no-repeat;
@@ -2741,7 +2741,7 @@ figcaption {
   bottom: 0%;
   width: 50vw;
   height: 100%;
-  background-image: url('../images/2552x1130.svg');
+  background-image: url('/static/images/2552x1130.svg');
   background-position: 100% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3110,7 +3110,7 @@ figcaption {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-image: url('../images/memphis-pattern.svg');
+  background-image: url('/static/images/memphis-pattern.svg');
   background-position: 0px 0px;
   background-size: 510px;
   opacity: 0.35;
@@ -3146,7 +3146,7 @@ figcaption {
   z-index: -1;
   width: 100%;
   height: 800px;
-  background-image: url('../images/divider-bottom-1.svg');
+  background-image: url('/static/images/divider-bottom-1.svg');
   background-position: 0px -1px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3312,44 +3312,44 @@ figcaption {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  background-image: url('../images/photo-1551739440-5dd934d3a94a.jpeg');
+  background-image: url('/static/images/photo-1551739440-5dd934d3a94a.jpeg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .c-grid1__image.img2 {
-  background-image: url('../images/photo-1533575349875-5f372f88e25b.jpeg');
+  background-image: url('/static/images/photo-1533575349875-5f372f88e25b.jpeg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .c-grid1__image.img3 {
-  background-image: url('../images/photo-1531608139434-1912ae0713cd.jpeg');
+  background-image: url('/static/images/photo-1531608139434-1912ae0713cd.jpeg');
 }
 
 .c-grid1__image.img4 {
-  background-image: url('../images/Screen-Shot-2019-08-28-at-14.45.43.JPG');
+  background-image: url('/static/images/Screen-Shot-2019-08-28-at-14.45.43.JPG');
 }
 
 .c-grid1__image.img5 {
-  background-image: url('../images/photo-1505740420928-5e560c06d30e.jpeg');
+  background-image: url('/static/images/photo-1505740420928-5e560c06d30e.jpeg');
 }
 
 .c-grid1__image.img6 {
-  background-image: url('../images/photo-1545128650-e8394959608b.jpeg');
+  background-image: url('/static/images/photo-1545128650-e8394959608b.jpeg');
 }
 
 .c-grid1__image.img7 {
-  background-image: url('../images/Screen-Shot-2019-08-28-at-14.47.25.JPG');
+  background-image: url('/static/images/Screen-Shot-2019-08-28-at-14.47.25.JPG');
 }
 
 .c-grid1__image.img8 {
-  background-image: url('../images/photo-1509198397868-475647b2a1e5.jpeg');
+  background-image: url('/static/images/photo-1509198397868-475647b2a1e5.jpeg');
 }
 
 .c-grid1__image.img9 {
-  background-image: url('../images/photo-1436473849883-bb3464c23e93.jpeg');
+  background-image: url('/static/images/photo-1436473849883-bb3464c23e93.jpeg');
 }
 
 .bg-decoration7 {
@@ -5460,19 +5460,19 @@ figcaption {
 
 @font-face {
   font-family: 'Fa brands 400';
-  src: url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.eot') format('embedded-opentype'), url('../fonts/fa-brands-400.woff') format('woff'), url('../fonts/fa-brands-400.ttf') format('truetype'), url('../fonts/fa-brands-400.svg') format('svg');
+  src: url('/static/fonts/fa-brands-400.woff2') format('woff2'), url('/static/fonts/fa-brands-400.eot') format('embedded-opentype'), url('/static/fonts/fa-brands-400.woff') format('woff'), url('/static/fonts/fa-brands-400.ttf') format('truetype'), url('/static/fonts/fa-brands-400.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fa 400';
-  src: url('../fonts/fa-regular-400.woff2') format('woff2'), url('../fonts/fa-regular-400.eot') format('embedded-opentype'), url('../fonts/fa-regular-400.woff') format('woff'), url('../fonts/fa-regular-400.ttf') format('truetype'), url('../fonts/fa-regular-400.svg') format('svg');
+  src: url('/static/fonts/fa-regular-400.woff2') format('woff2'), url('/static/fonts/fa-regular-400.eot') format('embedded-opentype'), url('/static/fonts/fa-regular-400.woff') format('woff'), url('/static/fonts/fa-regular-400.ttf') format('truetype'), url('/static/fonts/fa-regular-400.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fa solid 900';
-  src: url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.eot') format('embedded-opentype'), url('../fonts/fa-solid-900.woff') format('woff'), url('../fonts/fa-solid-900.ttf') format('truetype'), url('../fonts/fa-solid-900.svg') format('svg');
+  src: url('/static/fonts/fa-solid-900.woff2') format('woff2'), url('/static/fonts/fa-solid-900.eot') format('embedded-opentype'), url('/static/fonts/fa-solid-900.woff') format('woff'), url('/static/fonts/fa-solid-900.ttf') format('truetype'), url('/static/fonts/fa-solid-900.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }

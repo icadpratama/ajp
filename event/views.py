@@ -8,7 +8,7 @@ from .models import Event
 # Create your views here.
 def list(request):
     qs_list = Event.objects.all().published() # queryset -> list of python object
-    paginator = Paginator(qs_list, 2)
+    paginator = Paginator(qs_list, 6)
     page_number = request.GET.get('page')
     qs = paginator.get_page(page_number)
     template_name = 'event.html'
