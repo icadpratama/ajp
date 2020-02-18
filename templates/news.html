@@ -29,7 +29,7 @@
     <div class="container flex-horizontal container-wrap">
 		{% for object in object_list %}
 		<div class="col lg-4 md-12 margin-bottom-quad">
-			<a href="single-post.html" class="w-inline-block">
+			<a href="{{ object.slug }}" class="w-inline-block">
 				<img src="{{ object.thumbnail.url }}" alt="" class="margin-bottom">
 			</a>
 			<div class="c-gridpost__category">
