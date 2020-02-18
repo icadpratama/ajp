@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.http import HttpResponse, Http404
+from django.shortcuts import render, get_object_or_404, redirect
 
 from .models import News
 
@@ -14,5 +14,8 @@ def list(request):
     context = {'object_list': qs}
     return render(request, template_name, context)
 
-def detail(request):
-    return HttpResponse("<h1>News Detail</h1>")
+def detail(request, slug):
+    obj = get_object_or_404(News, slug=slug)
+    template_name = 'news/detail.html'
+    context = {"object": obj}
+    return render(request, template_name, context)

@@ -3,8 +3,8 @@
 {% block extrastyle %}
 <style>
     :root {
-        --primary-color: #edab00;
-        --primary-color-faded: #efbb33;
+        --primary-color: #FFB449;
+        --primary-color-faded: #FDDD5C;
         --secondary-color: #ee3c37;
         --visit-color: #ee3c37;
     }
@@ -99,6 +99,18 @@
         opacity: 0.8;
     }
     a:hover{
+        color: var(--visit-color);
+    }
+
+    ul.messagelist li {
+        background: #fdfd96 url(/static/admin/img/icon-yes.svg) 40px 12px no-repeat;
+    }
+
+    div.breadcrumbs {
+        color: var(--visit-color);
+    }
+
+    div.breadcrumbs a:hover{
         color: var(--visit-color);
     }
 </style>

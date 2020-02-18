@@ -6,4 +6,5 @@ urlpatterns = [
     re_path('^$', views.list),
     re_path('^detail/$', views.detail),
     path('summernote/', include('django_summernote.urls')),
+    path('<str:slug>/', views.detail),
 ]
