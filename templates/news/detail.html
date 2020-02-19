@@ -2,6 +2,14 @@
 
 {% block title %} Berita {% endblock title %}
 
+{% block meta %}
+<meta property="og:url" content="{{ request.build_absolute_uri }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ object.title }}" />
+<meta property="og:description" content="{{ object.content }}" />
+<meta property="og:image" content="{{ object.thumbnail.url }}" />
+{% endblock meta %}
+
 {% block content %}
 <div class="section is-header">
     <div class="container">
@@ -24,7 +32,13 @@
         <div class="col lg-4 md-12 md-order-last">
             <a href="#" class="c-single-post__header-link">Sampaikan aspirasi</a>
             <a href="career-landing.html" class="c-single-post__header-link">Komentar</a>
-            <a href="#" class="c-single-post__header-link no-border">Bagikan</a>
+            <div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-width="" data-layout="button_count"
+                data-action="like" data-size="small" data-share="false"></div>
+            <div class="fb-share-button" data-href="{{ request.build_absolute_uri }}" data-layout="button_count"
+                data-size="small">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"
+                    class="fb-xfbml-parse-ignore">Bagikan</a>
+            </div>
         </div>
     </div>
     <div class="container margin-bottom-double">
@@ -108,5 +122,21 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="col lg-12 no-margin-bottom md-12">
+            <div class="fb-comments" data-href="{{ request.build_absolute_uri }}"
+                data-width="100%" data-numposts="5"></div>
+        </div>
+    </div>
 </div>
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 {% endblock content %}
