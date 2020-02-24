@@ -32,6 +32,15 @@ class NewsManager(models.Manager):
             return self.get_queryset().none()
         return self.get_queryset().published().search(query)
 
+class Category(models.Model):
+    title = models.CharField(max_length=30)
+
+    class Meta:
+        ordering = ['title']
+
+    def __str__(self):
+        return self.title
+
 # Create your models here.
 class News(models.Model):
     user    = models.ForeignKey(User, default=1, null=True, on_delete=models.SET_NULL)
@@ -44,6 +53,7 @@ class News(models.Model):
     publish_date = models.DateTimeField(auto_now=False, auto_now_add=False, null=True, blank=True, default=datetime.now)
     updated = models.DateTimeField(auto_now=True, auto_now_add=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
+    categories = models.ManyToManyField(Category)
 
     objects = NewsManager()
 
