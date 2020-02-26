@@ -7,7 +7,7 @@ from .models import News
 
 # Create your views here.
 def list(request):
-    qs_list = News.objects.all().published()
+    qs_list = News.objects.all()
     paginator = Paginator(qs_list, 6)
     page_number = request.GET.get('page')
     qs = paginator.get_page(page_number)
