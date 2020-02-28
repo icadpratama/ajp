@@ -6,7 +6,7 @@ SECRET_KEY = '7d38af2e65d1ee4e6e940be1ff7a2fcfa422f1aba281a374'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['adrianjparuntu.herokuapp.com']
+ALLOWED_HOSTS = ['dev.adrianparuntu.id', 'adrianparuntu.id']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -53,27 +53,27 @@ TEMPLATES = [
 WSGI_APPLICATION = 'ajp.wsgi.application'
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'website',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'dfndn8540m5kub',
-#         'USER': 'zmurupxzrsaurr',
-#         'PASSWORD': 'c5911265807bb80ede83ba0ce8a15f8c4a61253fc39b346cef1867a7b07feec6',
-#         'HOST': 'ec2-3-230-106-126.compute-1.amazonaws.com',
+#         'NAME': 'website',
+#         'USER': 'postgres',
+#         'PASSWORD': 'postgres',
+#         'HOST': '127.0.0.1',
 #         'PORT': '5432',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
